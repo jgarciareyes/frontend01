@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecters part two</title>
+    <style>
+        div p{
+            color: rgb(126, 30, 204);
+        }
+        div > div{
+            background: plum;
+        }
+        .not_p{
+            background: goldenrod;
+        }
+        div + section{
+            background: palevioletred;
+        }
+        div ~ p{
+            color: rgb(5, 138, 9);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>This paragraph is a test</p>
+            <p>This is another paragraph with the same rgb color</p>
+            <div class="not_p">It is not a paragraph</div>
+        </div>
+    </div>
+    <p>Selectors class</p>
+    <div>
+        Master
+    </div>
+    <section>
+        Now the section
+    </section>
+</body>
+</html>
